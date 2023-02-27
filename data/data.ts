@@ -1,5 +1,5 @@
 
-export const clientsNames = {qualityAuto: 'Quality Auto', vjj: 'vjj', liz: 'liz', nrp: 'nrp'}
+export const clientsNames = {qualityAuto: 'Quality Auto', vjj: 'vjj', liz: 'liz', nrp: 'nrp', star: 'Star Media', potek: 'potek'}
 
 export const qualityAutoCategories = ['qualityAuto', 'clients', 'tires', 'exhaust', 'oil change', 'breaks', 'other']
 export const qualityAuto = {
@@ -86,4 +86,25 @@ export const nrp = {
     buckthorn : ['#BuckthornRemoval', '#Buckthorn', '#InvasiveSpeciesRemoval', '#InvasiveSpecies', '#ForestManagement', '#ForestryMulching', '#ForestryMowing'],
     erosion : ['#ShorelineRestoration', '#StreamRestoration', '#ShorelineRestorationServices', '#ErosionControl', '#BufferPlanting', '#NativePlant'],
     felling : ['#ChainsawTraining', '#Felling', '#WinterFelling', '#SnowDay2023', '#ChainsawSafety', '#FaceCut'],
+}
+
+export const potekCategories = ['About Potekglass', 'About Clients', 'Fusing', 'Stained Glass', 'Torch', 'Other']
+export const potek = {
+    aboutPotek : ['#Potekglass', '#GlassArtist', '#MNGlass', '#GlassClasses', '#GlassDecor', '#NEArt', '#OpenStudio', '#NEMineapolisArtDistrict', '#NortheastArtsDistrict', '#BullseyeGlass', '#GlassDistributors', '#GlassClass'],
+    clients : ['#NEMinneapolis', '#LocalMN', '#SupportMNBusiness', '#TwinCities', '#TwinCitiesEvents'],
+    fusing : ['#GlassFusing', '#GlassFusion', '#GlassFusingClass', '#FusedGlass', '#GlassFrit', '#GlassRods'],
+    stainedGlass : ['#StainedGlassArt', '#GlassSheet', '#StainedGlassDesign', '#StainedGlassStudio'],
+    torch : ['#TorchWork', '#GlassTorch', '#PassTheFlame', '#GlassRods'],
+    other : ['#GlassRepair', '#BeadMaker', '#BeadMaking', '#SheetOfTheWeek', '#MottledGlass', '#RainbowGlass'],
+}
+
+export const starCategories = ['About Star Media', 'About Clients', 'Social Media', 'Photography', 'Videography', 'Website', 'Business']
+export const star = {
+    aboutStar: ['#StarMedia', '#StarMediaHouse', '#ProfessionalMedia', '#BusinessHelp', '#ContentStrategist', '#GirlBossTips', '#FemaleEntrepreneur', '#SocialContent', '#PromotionalContent', '#ContentCuration', '#MediaHouse', '#GirlsInMarketing'],
+    clients: ['#MNSmallBusiness', '#TwinCitiesMarketing', '#LocalMN'],
+    social: ['#InstagramTipsAndTricks', '#Instagram101', '#InstaAdvice', '#ContentPlanningTips', '#WhatToPost', '#ContentPlanning', '#SocialAnalytics', '#IncreaseEngagement'],
+    photography: ['#SaintPaulPhotographer', '#ProductPhotos', '#BrandingShoot', '#TwinCitiesPhotographer', '#UnexpectedPhotos'],
+    video: ['#PromotionalVideo', '#BTSVideo'],
+    website: ['#WebsiteBuild', '#WixSite'],
+    business: ['#SmallBusinessShoutout', '#SustainablePractices']
 }

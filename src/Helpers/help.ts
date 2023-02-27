@@ -1,4 +1,4 @@
-import { clientsNames, liz, lizCategories, nrp, nrpCategories, qualityAuto, qualityAutoCategories, vjj, vjjCategories } from "../../data/data"
+import { clientsNames, liz, lizCategories, nrp, nrpCategories, potek, potekCategories, qualityAuto, qualityAutoCategories, star, starCategories, vjj, vjjCategories } from "../../data/data"
 
 export default function generate(client: string, category: string, count: number): string {
     let newArray = []
@@ -383,6 +383,198 @@ export default function generate(client: string, category: string, count: number
                 break;
             }
         break;
+        case clientsNames.star: 
+            switch (category) {
+                case starCategories[0]: 
+                if (count > star.aboutStar.length) {
+                    //Protect us from an infinite loop if the count is greater than the total number of items
+                    count = star.aboutStar.length
+                }
+                for(let i = 1; i <= count; i++) {
+                    let randomString = getRandomItemFromString(star.aboutStar)
+                    if (newArray.includes(randomString)) {
+                        i--
+                    } else {
+                        newArray.push(randomString)
+                    }
+                }
+                break;
+                case starCategories[1]: 
+                if (count > star.clients.length) {
+                    //Protect us from an infinite loop if the count is greater than the total number of items
+                    count = star.clients.length
+                }
+                for(let i = 1; i <= count; i++) {
+                    let randomString = getRandomItemFromString(star.clients)
+                    if (newArray.includes(randomString)) {
+                        i--
+                    } else {
+                        newArray.push(randomString)
+                    }
+                }
+                break;
+                case starCategories[2]: 
+                if (count > star.social.length) {
+                    //Protect us from an infinite loop if the count is greater than the total number of items
+                    count = star.social.length
+                }
+                for(let i = 1; i <= count; i++) {
+                    let randomString = getRandomItemFromString(star.social)
+                    if (newArray.includes(randomString)) {
+                        i--
+                    } else {
+                        newArray.push(randomString)
+                    }
+                }
+                break;
+                case starCategories[3]:
+                    if (count > star.photography.length) {
+                        //Protect us from an infinite loop if the count is greater than the total number of items
+                        count = star.photography.length
+                    }
+                    for(let i = 1; i <= count; i++) {
+                        let randomString = getRandomItemFromString(star.photography)
+                        if (newArray.includes(randomString)) {
+                            i--
+                        } else {
+                            newArray.push(randomString)
+                        }
+                    } 
+                break;
+                case starCategories[4]:
+                    if (count > star.video.length) {
+                        //Protect us from an infinite loop if the count is greater than the total number of items
+                        count = star.video.length
+                    }
+                    for(let i = 1; i <= count; i++) {
+                        let randomString = getRandomItemFromString(star.video)
+                        if (newArray.includes(randomString)) {
+                            i--
+                        } else {
+                            newArray.push(randomString)
+                        }
+                    } 
+                break;
+                case starCategories[5]:
+                    if (count > star.website.length) {
+                        //Protect us from an infinite loop if the count is greater than the total number of items
+                        count = star.website.length
+                    }
+                    for(let i = 1; i <= count; i++) {
+                        let randomString = getRandomItemFromString(star.website)
+                        if (newArray.includes(randomString)) {
+                            i--
+                        } else {
+                            newArray.push(randomString)
+                        }
+                    } 
+                break;
+                case starCategories[6]: 
+                if (count > star.business.length) {
+                    //Protect us from an infinite loop if the count is greater than the total number of items
+                    count = star.business.length
+                }
+                for(let i = 1; i <= count; i++) {
+                    let randomString = getRandomItemFromString(star.business)
+                    if (newArray.includes(randomString)) {
+                        i--
+                    } else {
+                        newArray.push(randomString)
+                    }
+                }
+                break;
+            }
+        break;
+        case clientsNames.potek: 
+            switch (category) {
+                case potekCategories[0]: 
+                if (count > potek.aboutPotek.length) {
+                    //Protect us from an infinite loop if the count is greater than the total number of items
+                    count = potek.aboutPotek.length
+                }
+                for(let i = 1; i <= count; i++) {
+                    let randomString = getRandomItemFromString(potek.aboutPotek)
+                    if (newArray.includes(randomString)) {
+                        i--
+                    } else {
+                        newArray.push(randomString)
+                    }
+                }
+                break;
+                case potekCategories[1]: 
+                if (count > potek.clients.length) {
+                    //Protect us from an infinite loop if the count is greater than the total number of items
+                    count = potek.clients.length
+                }
+                for(let i = 1; i <= count; i++) {
+                    let randomString = getRandomItemFromString(potek.clients)
+                    if (newArray.includes(randomString)) {
+                        i--
+                    } else {
+                        newArray.push(randomString)
+                    }
+                }
+                break;
+                case potekCategories[2]: 
+                if (count > potek.fusing.length) {
+                    //Protect us from an infinite loop if the count is greater than the total number of items
+                    count = potek.fusing.length
+                }
+                for(let i = 1; i <= count; i++) {
+                    let randomString = getRandomItemFromString(potek.fusing)
+                    if (newArray.includes(randomString)) {
+                        i--
+                    } else {
+                        newArray.push(randomString)
+                    }
+                }
+                break;
+                case potekCategories[3]:
+                    if (count > potek.stainedGlass.length) {
+                        //Protect us from an infinite loop if the count is greater than the total number of items
+                        count = potek.stainedGlass.length
+                    }
+                    for(let i = 1; i <= count; i++) {
+                        let randomString = getRandomItemFromString(potek.stainedGlass)
+                        if (newArray.includes(randomString)) {
+                            i--
+                        } else {
+                            newArray.push(randomString)
+                        }
+                    } 
+                break;
+                case potekCategories[4]:
+                    if (count > potek.torch.length) {
+                        //Protect us from an infinite loop if the count is greater than the total number of items
+                        count = potek.torch.length
+                    }
+                    for(let i = 1; i <= count; i++) {
+                        let randomString = getRandomItemFromString(potek.torch)
+                        if (newArray.includes(randomString)) {
+                            i--
+                        } else {
+                            newArray.push(randomString)
+                        }
+                    } 
+                break;
+                case potekCategories[5]:
+                    if (count > potek.other.length) {
+                        //Protect us from an infinite loop if the count is greater than the total number of items
+                        count = potek.other.length
+                    }
+                    for(let i = 1; i <= count; i++) {
+                        let randomString = getRandomItemFromString(potek.other)
+                        if (newArray.includes(randomString)) {
+                            i--
+                        } else {
+                            newArray.push(randomString)
+                        }
+                    } 
+                break;
+            }
+        break;
+    
+    
     }
     
     return returnStringFromArray(newArray)

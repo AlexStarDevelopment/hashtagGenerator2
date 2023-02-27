@@ -1,7 +1,7 @@
 import { Box, Button, createTheme, FormControl, InputLabel, List, ListItem, MenuItem, Select, SelectChangeEvent, styled, TextField, ThemeProvider } from "@mui/material";
 import React, { useState } from "react";
 import { TextareaAutosize } from '@mui/base';
-import { clientsNames, lizCategories, nrpCategories, qualityAuto, qualityAutoCategories, vjjCategories } from "../data/data";
+import { clientsNames, lizCategories, nrpCategories, potekCategories, qualityAuto, qualityAutoCategories, starCategories, vjjCategories } from "../data/data";
 import AppMenuBar from "../src/components/AppMenuBar";
 import SelectComponent from "../src/components/SelectComponent";
 import help from "../src/Helpers/help";
@@ -31,7 +31,7 @@ export default function Home() {
 
   const [client, setClient] = React.useState<string>();
   const [tagsToDisplay, setTagsToDisplay] = React.useState<string>()
-  const clients = [clientsNames.qualityAuto, clientsNames.liz, clientsNames.nrp, clientsNames.vjj]
+  const clients = [clientsNames.qualityAuto, clientsNames.liz, clientsNames.nrp, clientsNames.vjj, clientsNames.star, clientsNames.potek]
 
   const handleChangeClient = (event: SelectChangeEvent) => {
     setClient(event.target.value as string);
@@ -49,7 +49,7 @@ export default function Home() {
 
   const handleClick = () => {
     const spreadList = [...listOfComponents]
-    spreadList.push(<SelectComponent options={client === 'Quality Auto' ? qualityAutoCategories : client === 'vjj' ? vjjCategories : client === 'liz' ? lizCategories : client === 'nrp' ? nrpCategories : []}/>)
+    spreadList.push(<SelectComponent options={client === 'Quality Auto' ? qualityAutoCategories : client === 'vjj' ? vjjCategories : client === 'liz' ? lizCategories : client === 'nrp' ? nrpCategories : client === 'Star Media' ? starCategories : client === 'potek' ? potekCategories : []}/>)
     setListOfComponents(spreadList)
   }
 
@@ -80,6 +80,11 @@ export default function Home() {
       return lizCategories
     } else if (client === clientsNames.nrp) {
       return nrpCategories
+    } else if (client === clientsNames.star) {
+      return starCategories
+    }
+    else if (client === clientsNames.potek) {
+      return potekCategories
     }
     return []
   }
